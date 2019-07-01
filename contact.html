@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> KLD BLOG</title>
+  <meta name="keywords" content="muana blog", "motema blog", "mboka blog">
+  <meta name="robots" content="index">
+  <meta name="description" content="Blog des écrivains">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-sm" style="position: fixed; width: 100%; Z-index: 6;">
+    <a class="navbar-brand logo" href="#">Mon Blog</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#screenmode">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="screenmode">
+      <ul class="navbar-nav">
+        <li class="nav-item first-item">
+          <a class="nav-link" href="index.html">ACCUEIL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="author.html">A PROPOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- end -->
+
+  <!--  Body of the document-->
+
+  <div class="container" style="padding: 0;">
+    <div></div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-12" id="reset2">
+        <div class="info-contact">
+          <span>PHONE</span>
+          <a href="tel:+241 04 68 95 25">+241 04 68 95 25</a>
+          <span>EMAIL</span>
+          <a href="mailto:klauriondareich@gmail.com">klauriondareich@gmail.com</a>
+          <a href="mailto:kouhouinikina@gmail.com">kouhouinikina@gmail.com</a>
+          <span>ADRESSE</span>
+          <address>
+            Quartier IAI
+          </address>
+        </div>
+      </div>
+      <div class="col-lg-8" id="reset">
+        <div class="contact-form">
+          <div class="contact-me">
+            <h2>Contactez Moi</h2>
+          </div>
+          <form action="#" method="POST" id="formulaire">
+            <div class="input-content">
+              <div><input type="text" name="nom" placeholder="Votre nom" required id="username"></div>
+              <p id="invalidusername"></p>
+              <div><input type="email" name="email" placeholder="Votre email" required id="useremail"></div>
+              <p id="invalidmail"></p>
+            </div>
+            <div class="input-content">
+              <textarea name="message" required id="usermessage" cols="30" rows="10">
+                Saisir le message ici ...
+              </textarea>
+            </div>
+            <button id="button">Envoyer</button>
+            <span id="validatemessage"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="paragraphe">
+      <p>Contactez moi pour plus d'informations sur le blog ou si vous avez des suggestions d'articles à mettre,
+        notons que ce blog met en avance la littérature mondaine en générale et africaine en particulier.
+      </p>
+    </div>
+  </div>
+
+    <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7353219939937!2d9.47820611432855!3d0.36956986404444914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f3e9fdb555025%3A0x3e53b7c20a8baf8e!2sInstitut+Africain+D&#39;informatique!5e0!3m2!1sfr!2sga!4v1561975103677!5m2!1sfr!2sga" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  <!-- newsletter -->
+
+  <div class="container-fluid bg-dark">
+    <div class="row">
+      <footer>
+        <h3 class="text-white">Souscrire à la Newsletter</h3>
+        <form action="#" method="POST" id="newsform">
+          <input type="email" name="email" placeholder="Entrer votre Email" id="newsletterinput">
+          <button type="button" class="btn" id="subscribe">Souscrire</button>
+        </form>
+        <p id="infonewsletter"></p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- end -->
+
+  <script src="assets/js/file.js"></script>
+type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>

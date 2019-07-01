@@ -97,6 +97,10 @@ textarea{
 /* media queries for smartphone screen */
 
 @media screen and (max-width:768px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
   .container {
     width: 80%;
   }
@@ -139,11 +143,53 @@ textarea{
   .share{
     margin-bottom: 20px;
   }
+  .contact-me h2{
+    font-size: 18px;
+  }
+  form div input{display: block;}
+  .contact-form input{
+    margin-top: 10px;
+  }
+  div#reset .contact-form{
+    padding: 0;
+    margin: 0;
+  }
+  div#reset .contact-form input{
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  div#reset .contact-form textarea{
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    width: 100%;
+    text-align: left;
+  }
+  div#reset2{
+    padding: 0;
+  }
+  form div.input-content{
+  width: 100%;
+  }
+  .contact-form form button{
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  div#reset2 .info-contact{width: 100%;}
+  .paragraphe{
+    margin-top: 10px;
+  }
+
 }
+
 
 /*Medias queries for high screen*/
 
 @media screen and (min-width: 1024px){
+  .paragraphe{
+    margin-top: 80px;
+  }
   nav ul {
     margin-left: 200px;
     width: 80%;
@@ -177,4 +223,110 @@ textarea{
 .text-input input:focus, textarea:focus{
   border: 1px solid #48DDE5;
   outline: none;
+}
+
+/**************************
+Loader
+*****************/
+
+.loader{
+  width: 40px;
+  height: 40px;
+  border: 6px solid #e5e5e5;
+  border-top: 6px solid grey;
+  border-radius: 100px;
+  animation: loader 1s linear infinite;
+}
+@keyframes loader{
+  0% {
+    transform: translate(-50% , -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50% , -50%) rotate(360deg);
+  }
+}
+#loader, #message{display: none;}
+.loader-container{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.loader{
+  position: absolute;
+  right: 50%;
+  bottom: 20%;
+}
+#message{
+  position: absolute;
+  top: 0;
+  left: 35%;
+  color: #34c924;
+}
+/**************************
+ contact part
+**************************/
+.info-contact{
+  width: 90%;
+  margin-top: 100px;
+  padding: 10px;
+  background-color: #212529;
+  color: white;
+}
+.contact-form{
+  margin-top: 100px;
+  width: 100%;
+}
+.contact-me{
+  background-color: #212529;
+  color: white;
+}
+.contact-me h2{
+  padding: 7px;
+  text-align: center;
+}
+.contact-form textarea{
+  width: 80%;
+  height: 150px;
+  margin-left: 40px;
+}
+.contact-form input[type="text"]{
+  padding: 5px;
+  margin-right: 20px;
+}
+.contact-form input{
+  width: 80%;
+  border: 1px solid #212529;
+  border-radius: 2px;
+  outline: none;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.contact-form button{
+  background-color: #212529;
+  color: white;
+  border: 0;
+  padding: 6px;
+  margin-top: 10px;
+  margin-left: 8%;
+}
+.block-contact{width: 100px;}
+.info-contact span{
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+#validatemessage, #invalidusername, #invalidmail, #infonewsletter{
+  color: red;
+  font-size: 14px;
+  text-align:center;
+  margin-top: 5px;
+}
+#map{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 10px;
+}
+.info-contact a{
+  color: white;
 }
